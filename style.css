@@ -1,0 +1,102 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Times New Roman", serif;
+}
+
+html, body{
+height:100%;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+/* Background Image */
+background-image:url("mitha.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* Box Form */
+
+.login-box{
+width:420px;
+background:#e6e6e6;
+padding:40px;
+border-radius:8px;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+
+.login-box h1{
+text-align:center;
+font-size:32px;
+margin-bottom:15px;
+}
+
+/* Line */
+
+.login-box hr{
+border:none;
+border-top:1px solid #9c9c9c;
+margin-bottom:20px;
+}
+
+/* Label */
+
+.login-box label{
+font-size:18px;
+font-weight:bold;
+display:block;
+margin-bottom:5px;
+}
+
+/* Input */
+
+.login-box input{
+width:100%;
+height:38px;
+padding:8px;
+border-radius:6px;
+border:1px solid #bdbdbd;
+margin-bottom:15px;
+font-size:15px;
+}
+
+/* Error Message */
+
+#error-message{
+color:red;
+font-size:18px;
+margin-bottom:10px;
+}
+
+/* Button */
+
+.button-container{
+text-align:center;
+}
+
+button{
+background:#1e73d8;
+color:white;
+border:none;
+padding:8px 28px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover Effect */
+
+button:hover{
+background:#155bb5;
+transform:scale(1.05);
+}
