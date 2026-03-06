@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Sign In</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Form Sign In</h1>
+<hr>
+
+<label for="username">Username</label>
+<input type="text" id="username" placeholder="Masukkan Username">
+
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Masukkan Password">
+
+<!-- Error Message -->
+<p id="error-message"></p>
+
+<hr>
+
+<div class="button-container">
+<button onclick="login()">Sign In</button>
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+let errorMessage = document.getElementById("error-message");
+
+if(username === "" || password === ""){
+errorMessage.innerHTML = "Username atau Password Tidak Boleh Kosong";
+return;
+}
+
+window.location.href = "https://www.instagram.com/";
+
+}
+
+</script>
+
+</body>
+</html>
