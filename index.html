@@ -39,11 +39,11 @@ let password = document.getElementById("password").value;
 let errorMessage = document.getElementById("error-message");
 
 if(username === ""){
-errorMessage.innerHTML = "Username tidak boleh kosong";
+errorMessage.innerHTML = "Username atau Password tidak boleh kosong";
 }
 
 else if(password === ""){
-errorMessage.innerHTML = "Password tidak boleh kosong";
+errorMessage.innerHTML = "Username atau Password tidak boleh kosong";
 }
 else if(password.length < 8 ){
 errorMessage.innerHTML = "Password harus 8 karakter";
