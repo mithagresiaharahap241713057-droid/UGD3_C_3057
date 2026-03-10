@@ -38,15 +38,22 @@ let username = document.getElementById("username").value;
 let password = document.getElementById("password").value;
 let errorMessage = document.getElementById("error-message");
 
-if(username === "" || password === ""){
-errorMessage.innerHTML = "Username atau Password Tidak Boleh Kosong";
-return;
+if(username === ""){
+errorMessage.innerHTML = "Username tidak boleh kosong";
 }
 
+else if(password === ""){
+errorMessage.innerHTML = "Password tidak boleh kosong";
+}
+
+else if(password.length < 8 || password.length > 16){
+errorMessage.innerHTML = "Password harus 8 sampai 16 karakter";
+}
+
+else{
 window.location.href = "https://www.instagram.com/";
-
 }
-
+}
 </script>
 
 </body>
