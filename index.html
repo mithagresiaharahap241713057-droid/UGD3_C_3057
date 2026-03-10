@@ -45,11 +45,12 @@ errorMessage.innerHTML = "Username tidak boleh kosong";
 else if(password === ""){
 errorMessage.innerHTML = "Password tidak boleh kosong";
 }
-
-else if(password.length < 8 || password.length > 16){
-errorMessage.innerHTML = "Password harus 8 sampai 16 karakter";
+else if(password.length < 8 ){
+errorMessage.innerHTML = "Password harus 8 karakter";
 }
-
+else if(password.length > 16){
+errorMessage.innerHTML = "Password tidak boleh lebih dari 16 karakter";
+}
 else{
 window.location.href = "https://www.instagram.com/";
 }
